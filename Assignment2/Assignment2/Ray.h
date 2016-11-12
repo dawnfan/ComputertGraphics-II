@@ -11,7 +11,10 @@ public:
 	// set parameters
 	void SetOriginPoint(QVector3D in_o);
 	void SetDirection(QVector3D in_d);
-	
+	// obtain parameters
+	QVector3D const OriginPoint(){ return r_origin_; };
+	QVector3D const Direction(){ return r_direction_; };
+
 	// intersection operators
 	QVector3D GetVertex(double in_t);
 	double DistancetoPoint(const QVector3D& in_p);

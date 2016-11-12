@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QVector3D>
+
 class Ray;
 
 typedef struct BoundingBox
@@ -12,11 +13,11 @@ typedef struct BoundingBox
 class AbObject
 {
 public:
-	AbObject(){};
-	virtual ~AbObject(){};
+	AbObject();
+	virtual ~AbObject();
 
 	// intersection operators
-	virtual bool RayHitTest(Ray){ return false; };
+	virtual bool RayHitTest(Ray, QVector3D&, QVector3D&);
 
 };
 

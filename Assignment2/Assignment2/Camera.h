@@ -12,7 +12,7 @@ public:
 		QSize in_ps = QSize(8, 6),
 		QVector3D in_ct = QVector3D(0, 0, 0),
 		QVector3D in_vd = QVector3D(0, 0, 1),
-		double in_fl = 8.0,
+		double in_fl = 50.0,
 		QVector3D in_up = QVector3D(0, 1, 0));
 	~Camera();
 

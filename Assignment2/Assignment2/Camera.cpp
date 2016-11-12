@@ -44,7 +44,7 @@ Ray* Camera::GetRay(int in_x, int in_y){
 	QVector3D out_o = c_focalpoint_;
 	// no anti-aliasing, one pixel with one shotting ray
 	QVector3D out_pos = fromPlanetoWorld(in_x, in_y);
-	out_pos = c_center_ - out_pos;
+	out_pos = out_pos - c_center_;
 	Ray* out_ray = new Ray(out_o, out_pos);
 	return out_ray;
 }

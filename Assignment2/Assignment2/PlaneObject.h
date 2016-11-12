@@ -2,18 +2,17 @@
 
 #include "AbObject.h"
 
-class SphereObject : public AbObject
+class PlaneObject
 {
 public:
-	SphereObject(QVector3D in_c, double in_r);
-	~SphereObject();
-	
+	PlaneObject(QVector3D in_p, QVector3D in_n);
+	~PlaneObject();
 	// intersection operators
 	bool RayHitTest(Ray in_ray, QVector3D& out_point, QVector3D& out_normal);
 
 private:
 	// sphere parameters
-	QVector3D		s_center_;
-	double			s_radius_;
+	QVector3D		p_point_;
+	QVector3D		p_normal_;
 };
 

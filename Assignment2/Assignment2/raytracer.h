@@ -4,6 +4,8 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_raytracer.h"
 
+class SceneRenderer;
+
 class RayTracer : public QMainWindow
 {
 	Q_OBJECT
@@ -13,7 +15,10 @@ public:
 	~RayTracer();
 
 private:
-	Ui::RayTracerClass ui;
+	Ui::RayTracerClass	ui;
+	
+	// my scene renderer
+	SceneRenderer*		m_scenrenderer_;
 };
 
 #endif // RAYTRACER_H

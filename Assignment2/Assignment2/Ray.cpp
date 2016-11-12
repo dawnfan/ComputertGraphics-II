@@ -1,5 +1,5 @@
+#pragma once
 #include "Ray.h"
-
 
 Ray::~Ray()
 {
@@ -22,3 +22,4 @@ QVector3D Ray::GetVertex(double in_t){
 double Ray::DistancetoPoint(const QVector3D& in_p){
 	return in_p.distanceToLine(r_origin_, r_direction_);
 }
+
