@@ -40,6 +40,6 @@
  </resources>
  <connections/>
  <slots>
-  <slot>on_pushButton_clicked123()</slot>
+  <slot>setCamera(QString)</slot>
  </slots>
 </ui>
