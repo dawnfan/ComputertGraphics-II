@@ -5,11 +5,11 @@
 class SphereObject : public AbObject
 {
 public:
-	SphereObject(QVector3D in_c, double in_r);
+	SphereObject(QVector3D in_c = QVector3D(0, 0, 400), double in_r = 400.0, QVector3D in_color = QVector3D(200, 200, 140));
 	~SphereObject();
 	
 	// intersection operators
-	bool RayHitTest(Ray in_ray, QVector3D& out_point, QVector3D& out_normal);
+	bool RayHitTest(Ray in_ray, IntersectPoint& out_hit);
 
 private:
 	// sphere parameters

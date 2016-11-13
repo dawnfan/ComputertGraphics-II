@@ -34,13 +34,13 @@ public:
     {
         if (RayTracerClass->objectName().isEmpty())
             RayTracerClass->setObjectName(QStringLiteral("RayTracerClass"));
-        RayTracerClass->resize(745, 575);
+        RayTracerClass->resize(920, 627);
         centralWidget = new QWidget(RayTracerClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         RayTracerClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(RayTracerClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 745, 23));
+        menuBar->setGeometry(QRect(0, 0, 920, 23));
         RayTracerClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(RayTracerClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

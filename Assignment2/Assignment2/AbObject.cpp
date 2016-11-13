@@ -7,6 +7,10 @@ AbObject::~AbObject()
 {};
 
 // intersection operators
-bool AbObject::RayHitTest(Ray, QVector3D&, QVector3D&){
+bool AbObject::RayHitTest(Ray, IntersectPoint&){
 	return false;
 };
+
+QVector3D AbObject::SurfaceColor(){
+	return o_surfacecolor_;
+}
