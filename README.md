@@ -1,7 +1,5 @@
 # ComputertGraphics-II
 
-标签（空格分隔）： assignment CG
-
 ---
 
 This repositorie cantains three assignments for CG-II. Since assignment 3 is devoloped based on assignment 2, only two projects can be founded here.
